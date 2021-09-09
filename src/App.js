@@ -7,6 +7,15 @@ const App = () => {
   const [characterList, setCharacterList] = useState([]);
   const [next, setNext] = useState(1);
 
+  //Renderização
+  useEffect(() => {
+    fetch("https://rickandmortyapi.com/api/character/")
+      .then((response) => response.json())
+      .then((response) => setCharacterList(response.results))
+      .catch((err) => console.log(err));
+  }, []);
+
+  //Atualização
   useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character/?page=${next}`)
       .then((response) => response.json())
