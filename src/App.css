@@ -1,0 +1,47 @@
+body,
+header,
+div,
+button,
+figure,
+img,
+p,
+h1,
+h4 {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 200vh;
+  background: linear-gradient(0, #120c56, #000000);
+}
+
+.App-header {
+  height: 150px;
+  padding: 1px;
+  background-color: black;
+}
+
+figure .img-slogan {
+  width: 300px;
+  height: 140px;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  figure .img-slogan {
+    width: 610px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+h1 {
+  font-size: 35px;
+  color: cadetblue;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 1px yellow;
+  font-family: "Architects Daughter", cursive;
+}
+
+button {
+  width: 90px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 2px;
+  color: lightgray;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 4px springgreen;
+  border: 2px solid lightgray;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  padding: 9px;
+  font-size: 13.5px;
+  box-shadow: 1px 1px 4px springgreen;
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .container-card {
+    max-width: 1200px;
+  }
+}
